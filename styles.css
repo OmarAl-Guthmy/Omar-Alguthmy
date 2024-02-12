@@ -371,21 +371,13 @@ nav a {
     }
 }
 
-/* For larger screens */
-@media screen and (min-width: 992px) {
-    .project iframe {
-        width: 560px; /* Reset width for larger screens */
-        height: 315px; /* Reset height for larger screens */
-    }
-}
-
 /* For smaller screens */
 @media screen and (max-width: 414px) { /* Adjust max-width as needed */
-    .home-text .name {
+    .home-text h1.name {
         font-size: 2em; /* Adjust as needed */
     }
 
-    .home-text .subtitle {
+    .home-text h2.subtitle {
         font-size: 1em; /* Adjust as needed */
         margin-bottom: 10px; /* Adjust as needed */
     }
