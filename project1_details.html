@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Development Process - Cardboard Box</title>
+    <link rel="stylesheet" href="project_details.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Include your main styles.css -->
+</head>
+<body>
+
+    <header>
+        <div class="back-logo">
+            <a href="index.html">&#9664; Back</a>
+        </div>
+        <h1>Development Process - Cardboard Box</h1>
+    </header>
+
+    <!-- Introductory Section -->
+    <div class="intro">
+      <h2>Ideas Sketch</h2>
+      <p>This section outlines the core mechanics of the game I specifically worked on. Within this segment, we delve into the primary gameplay elements that form the foundation of our project. These core mechanics were meticulously designed and implemented to provide engaging and immersive experiences for players.</p>
+      <div class="image-container">
+          <img src="images/Screenshots/SketchIdeas.png" alt="Early Ideas Sketch in Miro">
+      </div>
+    </div>
+    <section class="features">
+      
+        <!-- Core Game Mechanics -->
+        <div class="core-mechanics">
+          <h2>Core Game Mechanics</h2>
+          <p>In this section, we delve into the primary gameplay elements that form the foundation of our project. These core mechanics were meticulously designed and implemented to provide engaging and immersive experiences for players.</p>
+        </div>
+
+        <!-- Light System -->
+        <div class="feature">
+          <h2>Light System</h2>
+          <h3>Conceptualization:</h3>
+          <div class="image-container">
+            <img src="/images/Screenshots/Light Censor Sketch.png" alt="Light System Conceptualization">
+          </div>
+          <p>The light system captures the surrounding ambient light, affecting player visibility and gameplay. It incorporates a user interface element that alerts players to darkness, enhancing immersion.</p>
+          <h3>Implementation:</h3>
+          <div class="image-container">
+            <img src="/images/Screenshots/Light Censor.png" alt="Light System Implementation">
+          </div>
+          <p>The light system dynamically adjusts based on player position and environmental conditions. Visual indicators change to reflect light levels, providing valuable feedback to players.</p>
+          <h3>Testing and Iteration:</h3>
+          <p>Testing focused on ensuring consistent performance across diverse environments and player actions. Iterative enhancements were made to improve realism and gameplay balance.</p>
+          <div class="image-container">
+              <img src="/images/Screenshots/Light Censor Gif.gif" alt="Light System Testing and Iteration">
+          </div>
+        </div>
+
+        <!-- Basic Camera -->
+        <div class="feature">
+          <h2>Camera</h2>   
+          <h3>Conceptualization:</h3>
+          <div class="image-container">
+            <img src="/images/Screenshots/Camera.png" alt="Camera Conceptualization">
+          </div>
+          <p>The basic camera detects player presence and triggers actions accordingly. A visual indicator changes color when the player is detected, adding tension to stealth gameplay.</p>
+          <h3>Implementation:</h3>
+          <p>The basic camera mechanism employs raycasting to detect player visibility. Visual cues indicate when the camera is active, prompting players to adjust their tactics.</p>
+          <div class="image-container">
+            <img src="/images/Screenshots/camera Detect Gif.gif" alt="Basic Camera Testing and Iteration">
+        </div>
+          <h3>Testing and Iteration:</h3>
+          <p>Testing focused on ensuring accurate detection and response to player movements. Iterative adjustments were made to camera angles and detection ranges to balance challenge and fairness.</p>
+          <div class="image-container">
+              <img src="/images/Screenshots/Camera Gif.gif" alt="Basic Camera Testing and Iteration">
+          </div>
+      </div>
+
+        <!-- Laser Grid & Alarm System -->
+        <div class="feature">
+          <h2>Laser Grid & Alarm System</h2>
+          <h3>Conceptualization:</h3>
+          <div class="image-container">
+            <img src="/images/Screenshots/AlarmLaser.png" alt="Laser Grid & Alarm System Conceptualization">
+          </div>
+          <p>The laser grid creates physical barriers and triggers alarms when breached. It adds a layer of challenge to navigation and stealth gameplay. The alarm system responds to player actions, escalating threat levels. It adds urgency to gameplay and punishes reckless behavior.</p>
+          <h3>Implementation:</h3>
+          <p>The laser grid emits dynamic beams and detects player collisions. Triggered alarms alert nearby enemies, escalating tension and requiring strategic evasion. The alarm system triggers alarms and resets levels when activated. It dynamically adjusts enemy behavior, creating tense moments and strategic challenges.</p>
+          <h3>Testing and Iteration:</h3>
+          <p>Testing focused on ensuring accurate detection and alarm triggering for both systems. Iterative adjustments were made to beam visibility, alarm radius, triggers, and enemy responses to maintain gameplay balance.</p>
+          <div class="image-container">
+              <img src="/images/Screenshots/AlarmLaser Gif.gif" alt="Laser Grid & Alarm System Testing and Iteration">
+          </div>
+        </div>
+
+        <!-- Holding Box -->
+        <div class="feature">
+          <h2>Holding Box</h2>
+          <h3>Conceptualization:</h3>
+          <div class="image-container">
+            <img src="/images/Screenshots/box.png" alt="Holding Box Conceptualization">
+          </div>
+          <p>The holding box introduces a unique gameplay element allowing players to interact with a 1x1x1 meter box in the game world. Carrying it from the top provides cover and elevation advantages.</p>
+          <h3>Implementation:</h3>
+          <p>The holding box mechanic was implemented with physics-based interactions, enabling realistic carrying and manipulation. Its size and weight influence player movement and actions.</p>
+          <h3>Testing and Iteration:</h3>
+          <p>Testing focused on ensuring smooth handling and consistent behavior of the holding box. Iterative adjustments were made to physics parameters and player animations for an improved experience.</p>
+          <div class="image-container">
+              <img src="/images/Screenshots/Holding Box Gif.gif" alt="Holding Box Testing and Iteration">
+          </div>
+      </div>
+
+        <!-- Circuit Box -->
+        <div class="feature">
+            <h2>Circuit Box</h2>
+            <h3>Conceptualization:</h3>
+            <div class="image-container">
+              <img src="/images/Screenshots/LightDetection.png" alt="Circuit Box Conceptualization">
+            </div>
+            <p>The circuit box allows players to manipulate security measures strategically. It provides temporary reprieve from detection and adds depth to stealth gameplay.</p>
+            <h3>Implementation:</h3>
+            <div class="image-container">
+              <img src="/images/Screenshots/CircuitBox.png" alt="Circuit Box Implementation">
+            </div>
+            <p>Players interact with circuit boxes to disable specific security measures. This mechanic requires timing and decision-making, influencing level progression and tactics.</p>
+            <h3>Testing and Iteration:</h3>
+            <p>Testing focused on ensuring meaningful choices and tactical options. Iterative adjustments were made to disablement durations and affected security measures for balanced gameplay.</p>
+            <div class="image-container">
+                <img src="images/Screenshots/CircuitBox Gif.gif" alt="Circuit Box Testing and Iteration">
+            </div>
+        </div>
+    </section>
+
+    <section id="copyright">
+      <p>&copy; 2024 by Omar Al-Guthmy | All images, logos, and names are used with permission</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) { // Adjust scroll threshold as needed
+        $('.back-logo').addClass('show-back-logo');
+      } else {
+        $('.back-logo').removeClass('show-back-logo');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

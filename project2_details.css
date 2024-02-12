@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 14px; /* Reduce the font size */
+  }
+  
+  header {
+    text-align: center;
+    padding: 10px 0; /* Reduce the top and bottom padding */
+  }
+  
+  h1 {
+    font-size: 1.5em; /* Reduce the font size */
+  }
+  
+  .intro {
+    margin-bottom: 50px; /* Adjust the margin as needed */
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color */
+    border-radius: 10px; /* Example border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  }
+  
+  .intro h2 {
+    font-size: 24px; /* Example font size */
+    color: #333; /* Example text color */
+  }
+  
+  .intro p {
+    font-size: 16px; /* Example font size */
+    color: #666; /* Example text color */
+    line-height: 1.6; /* Example line height */
+  }
+  
+  .intro .image-container {
+    text-align: center;
+    margin-top: 20px; /* Example top margin */
+  }
+  
+  .intro .image-container img {
+    max-width: 100%; /* Example max width */
+    height: auto;
+    border-radius: 5px; /* Example border radius */
+  }
+  
+  .feature {
+    background-color: transparent;
+    padding: 10px; /* Reduce the padding */
+    margin: 10px 0; /* Adjust top and bottom margin */
+    max-width: 800px; /* Reduce the maximum width */
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add a bottom border */
+  }
+  
+  .feature:last-child {
+    border-bottom: none; /* Remove bottom border for the last feature */
+  }
+  
+  .feature h3 {
+    margin-top: 10px; /* Reduce the margin */
+    color: #ffa500;
+    font-size: 1.1em; /* Reduce the font size */
+  }
+  
+  .feature p {
+    line-height: 1.3; /* Reduce the line height */
+  }
+  
+  .core-mechanics {
+    font-size: 1.2em;
+      max-width: 1000px;
+      margin: 0 auto;
+      line-height: 1.5;
+  }
+  
+  .core-mechanics h2 {
+    font-size: 24px; /* Adjust as needed */
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .core-mechanics p {
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  img, video {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+  }
+  
+  .image-container {
+    margin: 10px; /* Reduce the margin */
+  }
+  
+  .image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .feature .image-container img,
+.feature .image-container img[src$='.gif'] {
+  max-width: 400px;
+  height: 225px;
+}
+  
+  #copyright {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Added CSS for back logo */
+  .back-logo {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .back-logo a {
+    display: inline-block;
+    padding: 6px 10px; /* Further decreased padding for smaller size */
+    font-size: 10px; /* Further decreased font size for smaller devices */
+    background-color: #333;
+    border-radius: 4px; /* Adjusted border radius */
+    color: white;
+    text-decoration: none;
+  }
+  
+  .back-logo a:hover {
+    background-color: #555;
+  }
+  
+  /* Media query for smaller devices */
+  @media screen and (max-width: 768px) {
+    .back-logo {
+      top: 5px; /* Adjust as needed for smaller devices */
+      left: 5px; /* Adjust as needed for smaller devices */
+    }
+  
+    .back-logo a {
+      padding: 4px 8px; /* Further decreased padding for smaller size */
+      font-size: 8px; /* Further decreased font size for smaller devices */
+    }
+  }
+  
+  
+  

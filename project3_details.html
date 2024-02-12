@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Development Process - Game Title</title>
+    <link rel="stylesheet" href="project_details.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="back-logo">
+            <a href="index.html">&#9664; Back</a>
+        </div>
+        <h1>Development Process - Game Title</h1>
+    </header>
+
+    <section class="intro">
+        <h2>Introduction Section</h2>
+        <p>Placeholder for introductory information.</p>
+        <div class="image-container">
+            <img src="images/Screenshots3/MergedSketchIdeas.png" alt="Placeholder Intro Image">
+        </div>
+    </section>
+
+    <section class="features">
+      
+        <!-- Placeholder for Core Game Mechanics -->
+        <div class="core-mechanics">
+          <h2>Core Game Mechanics</h2>
+          <p>This section outlines the core mechanics of the game I specifically worked on.</p>
+        </div>
+
+        <!-- Feature: AI System -->
+        <div class="feature">
+            <h2>AI Design (Tentacles, Angler Fish, Cthulhu)</h2>
+            <h3>Conceptualization, Implementation and Testing Iteration:</h3>
+            <p>The AI system was designed to control various creatures in the game. The tentacles, angler fish, and Cthulhu boss were conceptualized to provide unique challenges and interactions for players.</p>
+            <div class="image-container">
+                <img src="images/Screenshots3/mergedai.jpg" alt="Conceptualization Image">
+            </div>
+            <h3>Tentacles:</h3>
+            <p>The tentacles were implemented to create a claustrophobic atmosphere in tight spaces. They were programmed with randomized movements to keep players on edge.</p>
+            
+            <h3>Tentacles Testing and Iteration:</h3>
+            <p>Testing of the tentacles focused on player navigation and anxiety levels. Adjustments were made to their behavior to ensure they provided a challenging yet fair obstacle.</p>
+            <div class="image-container">
+                <img src="images/Screenshots3/Tentacles Gif.gif" alt="Implementation Image">
+            </div>
+            <h3>Angler Fish:</h3>
+            <p>The angler fish was implemented as a guide for players, leading them to key locations in the game. Its movement patterns and behavior were carefully scripted to provide subtle hints to players.</p>
+            
+            <h3>Angler Fish Testing and Iteration:</h3>
+            <p>Testing of the angler fish focused on player interaction and guidance. Iterative adjustments were made to its behavior based on player feedback to ensure it served its intended purpose effectively.</p>
+            <div class="image-container">
+                <img src="images/Screenshots3/Angler Fish Gif.gif" alt="Conceptualization Image">
+            </div>
+            <h3>Cthulhu:</h3>
+            <p>The Cthulhu boss served as the final challenge for players. Its AI was designed to create a sense of impending doom, with scripted attacks and environmental destruction.</p>
+            
+            <h3>Cthulhu Testing and Iteration:</h3>
+            <p>Testing of the Cthulhu boss focused on player strategy and engagement. Adjustments were made to its difficulty and attack patterns to ensure a satisfying and challenging final encounter.</p>
+            <div class="image-container">
+                <img src="images/Screenshots3/Cthulhu Boss Reveal Gif.gif" alt="Conceptualization Image">
+            </div>
+        </div>
+
+        <!-- Feature: Game Cutscene -->
+<div class="feature">
+    <h2>Game Cutscene</h2>
+    <h3>Conceptualization:</h3>
+    <p>When envisioning the game's cutscenes, my aim was to create immersive cinematic experiences that would captivate players and deepen their connection to the game world. Drawing inspiration from horror classics and narrative-driven games, I crafted scenes that would instill a sense of dread and anticipation, setting the stage for the climactic encounter with the Cthulhu boss.</p>
+    <div class="image-container">
+        <img src="images/Screenshots3/boss reveal sketch.png" alt="Game Cutscene Conceptualization Image">
+    </div>
+    <h3>Implementation:</h3>
+    <p>Bringing the envisioned cutscenes to life was a meticulous process that involved harnessing Unity's animation tools and scripting capabilities. Through careful choreography and attention to detail, I orchestrated dynamic sequences that seamlessly intertwined with gameplay, ensuring that players remained immersed in the unfolding narrative.</p>
+    <h3>Testing and Iteration:</h3>
+    <p>Testing the cutscenes involved evaluating their pacing, impact, and alignment with the game's overall tone and pacing. Iterative refinement was key, as I fine-tuned transitions, camera angles, and visual effects to evoke the desired emotional responses from players. By continuously iterating based on feedback, I aimed to deliver a truly cinematic experience that resonated with players.</p>
+    <div class="image-container">
+        <img src="images/Screenshots3/Split screen Cutscene Gif.gif" alt="Game Cutscene Testing and Iteration GIF">
+    </div>
+</div>
+
+<!-- Feature: Puzzle -->
+<div class="feature">
+    <h2>Puzzle</h2>
+    <h3>Conceptualization:</h3>
+    <p>I conceptualized intricate puzzles that would challenge players' problem-solving abilities while advancing the game's narrative. Each puzzle was designed to be intuitive yet rewarding, encouraging players to explore and interact with the game environment.</p>
+    <div class="image-container">
+        <img src="images/Screenshots3/puzzlePicsMerge.jpg" alt="Puzzle Conceptualization Image">
+    </div>
+    <h3>Implementation:</h3>
+    <p>Implementing the puzzles involved integrating interactive elements into the game world and designing logical solutions. I utilized Unity's game mechanics to create dynamic puzzle mechanics and ensure seamless interaction between players and the game environment.</p>
+    <h3>Testing and Iteration:</h3>
+    <p>Testing focused on assessing the difficulty curve and player experience of each puzzle. Iterative refinements were made based on playtesting feedback, aiming to strike a balance between challenge and accessibility. Continuous iteration ensured that puzzles remained engaging and satisfying throughout the game.</p>
+    <p>The walls within the game environment are adorned with intricate drawings representing puzzle images. These drawings serve as clues for players to determine the correct sequence for pressing the corresponding image plates. Players must carefully analyze the drawings to decipher the correct order of pressing the plates, simulating the process of deciphering a code.</p>
+    <div class="image-container">
+        <img src="images/Screenshots3/Puzzle Solving Gif.gif" alt="Puzzle Conceptualization Gif">
+    </div>
+</div>
+
+
+    </section>
+
+    <section id="copyright">
+      <p>&copy; 2024 by Your Name | All images, logos, and names are used with permission</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+            $('.back-logo').addClass('show-back-logo');
+          } else {
+            $('.back-logo').removeClass('show-back-logo');
+          }
+        });
+      });
+    </script>
+
+</body>
+</html>

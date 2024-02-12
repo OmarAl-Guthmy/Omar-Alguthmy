@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: #333;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.video-container {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: linear-gradient(#333, #333);
+}
+
+.video-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-text {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.name {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 1.2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.portfolio-link {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.content-section {
+    padding: 5vh;
+    text-align: center;
+    margin-bottom: 40px; /* Additional spacing between sections */
+    background-color: #ffffff; /* White background for all sections */
+}
+
+.content-section:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add line separator between sections */
+}
+
+.content-section#profile,
+.content-section#copyright {
+    background-color: #333; /* Background color for profile and copyright sections */
+    color: #fff; /* Text color for profile and copyright sections */
+}
+
+.content-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+}
+
+.content-section#projects h2 {
+    color: black;
+    margin-bottom: 50px; /* Add space below the project title */
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 40px; /* Adjust as needed */
+    border-bottom: 1px solid #ddd; /* Add line separator between projects */
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.video-info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Adjustments for Project 4 */
+
+.project-info {
+    padding-left: 20px; /* Adjust as needed */
+    flex-grow: 1; /* Allow the project info to expand and fill the remaining space */
+}
+
+.project-info p {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.project-info ul {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.metadata {
+    margin-top: auto; /* Align metadata to the bottom */
+}
+
+.project-info a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 40px; /* Adjust as needed */
+    border-bottom: 1px solid #ddd; /* Add line separator between projects */
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.project:last-child {
+    border-bottom: none; /* Remove bottom border for the last project */
+}
+
+.project-title {
+    font-size: 18px;
+    color: #000000;
+    margin: 15px 0; /* Adjust top and bottom margin */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.project iframe {
+    width: 560px;
+    height: 315px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 15px;
+    text-decoration: underline; /* Add underline to project titles */
+}
+
+.project-info h4 {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+    text-decoration: underline; /* Add underline to subtitles */
+}
+
+.project-info strong {
+    text-decoration: underline; /* Add underline to <strong> elements within .project-info */
+}
+
+.project-info ul {
+    text-align: left;
+    padding-left: 0;
+}
+
+.project-info ul li {
+    margin-bottom: 5px;
+    list-style-position: inside; /* Ensure bullet points are inside the list item */
+}
+
+.metadata {
+    margin-top: auto; /* Align metadata to the bottom */
+}
+
+.roles-responsibilities {
+    font-weight: normal;
+    color: #040404;
+    margin-top: 20px;
+}
+
+.role-title {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 50px;
+}
+
+#skills, #about, #contact {
+    padding: 5vh;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+#skills {
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+
+#skills h2 {
+    color: black; /* Change the color of the section title */
+}
+
+#skills .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-category {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.skill-category h3 {
+    color: white;
+    background-color: #333;
+    padding: 10px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    padding: 5vh;
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing between About Me and Contact Me */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+#copyright {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+    .project {
+        margin-bottom: 20px;
+    }
+    .project iframe {
+        max-width: 100%; /* Make the iframe responsive */
+        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Ensure videos take full width */
+    }
+    .project-info {
+        padding-left: 0;
+    }
+    .skill-category {
+        width: 100%; /* Make skill categories full width on smaller screens */
+    }
+    /* Reduce font size for project titles and descriptions */
+    .project-title,
+    .project-description {
+        font-size: 14px;
+    }
+    /* Reduce portrait size */
+    .portrait {
+        width: 100px;
+        height: 100px;
+    }
+    /* Reduce font size for other text elements */
+    nav a,
+    .name,
+    .intro,
+    .portfolio-link,
+    .roles-responsibilities,
+    .metadata,
+    .more-details,
+    .skill-category h3,
+    .skill-category li,
+    .contact-section p,
+    .social-icons img {
+        font-size: 12px;
+    }
+}
+
+/* For larger screens */
+@media screen and (min-width: 992px) {
+    .project iframe {
+        width: 560px; /* Reset width for larger screens */
+        height: 315px; /* Reset height for larger screens */
+    }
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Development Process - Game Title</title>
+    <link rel="stylesheet" href="project_details.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="back-logo">
+        <a href="index.html">&#9664; Back</a>
+    </div>
+    <h1>Development Process - Game Title</h1>
+</header>
+
+<section class="intro">
+    <h2>Introduction Section</h2>
+    <p>Placeholder for introductory information.</p>
+    <div class="image-container">
+        <img src="images/Screenshot4/Screenshot 2024-02-12 001409.png" alt="Placeholder Image">
+    </div>
+</section>
+
+<section class="features">
+  
+    <!-- Placeholder for Core Game Mechanics -->
+    <div class="core-mechanics">
+        <h2>Core Game Mechanics</h2>
+        <p>This section outlines the core mechanics of the game I specifically worked on.</p>
+    </div>
+
+    <!-- Feature 1: Timer -->
+    <div class="feature">
+        <h2>Feature 1 - Timer Design</h2>
+        <h3>Conceptualization:</h3>
+        <p>The player has a limited time to stop enemies from hacking the main shipping area.</p>
+        <div class="image-container">
+            <img src="images/Screenshot4/Screenshot 2024-02-11 202005.png" alt="Placeholder Image">
+        </div>
+        <h3>Implementation:</h3>
+        <p>Implemented a timer mechanic where the player needs to reach the hacking area within a specific time limit.</p>
+        <h3>Testing and Iteration:</h3>
+        <p>Tested and iterated on the timer system to ensure balanced gameplay and appropriate difficulty level.</p>
+        <div class="image-container">
+            <img src="images/Screenshot4/sneakgif.gif" alt="Placeholder GIF">
+        </div>
+    </div>
+
+    <!-- Feature 2: Stealth Design -->
+    <div class="feature">
+        <h2>Feature 2 - Stealth Design</h2>
+        <h3>Conceptualization:</h3>
+        <p>Designed stealth mechanics where the player can hide behind obstacles and use vents for navigation.</p>
+        <div class="image-container">
+            <img src="images/Screenshot4/Screenshot 2024-02-11 202835.png" alt="Placeholder Image">
+        </div>
+        <h3>Implementation:</h3>
+        <p>Implemented crouching, hiding, and vent crawling mechanics to enhance stealth gameplay.</p>
+        <div class="image-container">
+          <img src="images/Screenshot4/Screenshot 2024-02-11 203022.png" alt="Placeholder Image">
+      </div>
+        <h3>Testing and Iteration:</h3>
+        <p>Tested and refined stealth mechanics to ensure smooth player experience and balanced difficulty.</p>
+        <div class="image-container">
+            <img src="images/Screenshot4/Vent Gif.gif" alt="Placeholder GIF">
+        </div>
+    </div>
+
+    <!-- Feature 3: Hacking -->
+<div class="feature">
+  <h2>Feature 3 - Hacking</h2>
+  <h3>Conceptualization:</h3>
+  <p>Designed a hacking mechanic where the player can remotely access cameras to gather information.</p>
+  <h3>Implementation:</h3>
+  <p>Implemented a hacking interface and proximity-based camera interaction system.</p>
+  <div class="image-container">
+    <img src="images/Screenshot4/C Gif.gif" alt="Placeholder GIF">
+</div>
+  <h3>Testing and Iteration:</h3>
+  <p>Tested and adjusted hacking mechanics for usability and effectiveness in gathering intel. Additionally, incorporated camera proximity mechanics to require the player to be in close range for camera hacking.</p>
+  <div class="image-container">
+      <img src="images/Screenshot4/cameraview Gif.gif" alt="Placeholder GIF">
+  </div>
+</div>
+
+  <!-- Feature 4: Electric Fences and Camera Defense -->
+<div class="feature">
+  <h2>Feature 4 - Electric Fences and Camera Defense</h2>
+  <h3>Conceptualization:</h3>
+  <p>Designed areas with electric fences and cameras equipped with defensive capabilities to enhance player challenge and strategy.</p>
+  <div class="image-container">
+      <img src="images/Screenshot4/Screenshot 2024-02-12 100709.png" alt="Placeholder Image">
+  </div>
+  <h3>Implementation:</h3>
+  <p>Implemented electric fences as environmental hazards and cameras with shooting lasers to stun enemies.</p>
+  <h3>Testing and Iteration:</h3>
+  <p>Tested electric fence mechanics for player interaction and camera defense effectiveness in deterring enemy movement. Iteratively refined mechanics to balance challenge and player experience.</p>
+  <div class="image-container">
+      <img src="images/Screenshot4/Fence Gif.gif" alt="Placeholder GIF">
+  </div>
+</div>
+
+
+  <!-- Feature 5: Hacking - Simon Says Hack -->
+  <div class="feature">
+      <h2>Feature 5 - Hacking: Simon Says Hack</h2>
+      <h3>Conceptualization:</h3>
+      <p>Designed a hacking minigame where the player must remember and mimic a sequence of button presses.</p>
+      <div class="image-container">
+          <img src="images/Screenshot4/Hack Prototype.gif" alt="Placeholder Image">
+      </div>
+      <h3>Implementation:</h3>
+      <p>Implemented a Simon Says-style hacking minigame with increasing difficulty levels.</p>
+      <div class="image-container">
+        <img src="images/Screenshot4/Screenshot 2024-02-11 202057.png" alt="Placeholder Image">
+    </div>
+      <h3>Testing and Iteration:</h3>
+      <p>Tested and adjusted the Simon Says Hack minigame to ensure it provides a challenging yet enjoyable experience.</p>
+      <div class="image-container">
+          <img src="images/Screenshot4/SimonsaysHack.gif" alt="Placeholder GIF">
+      </div>
+  </div>
+
+</section>
+
+<section id="copyright">
+<p>&copy; 2024 by Your Name | All images, logos, and names are used with permission</p>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-logo').addClass('show-back-logo');
+    } else {
+      $('.back-logo').removeClass('show-back-logo');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
