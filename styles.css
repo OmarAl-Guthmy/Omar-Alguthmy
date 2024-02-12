@@ -379,3 +379,14 @@ nav a {
     }
 }
 
+/* For smaller screens */
+@media screen and (max-width: 414px) { /* Adjust max-width as needed */
+    .home-text h1.name {
+        font-size: 2em; /* Adjust as needed */
+    }
+
+    .home-text h2.subtitle {
+        font-size: 1em; /* Adjust as needed */
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+}
