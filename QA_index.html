@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardboard Box Bug Report</title>
+    <link rel="stylesheet" href="QA_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cardboard Box Bug Report</h1>
+        <table class="game-info">
+            <tr>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>High-Level Design</td>
+                <td>Immersive first-person stealth game set in a deserted military base.</td>
+            </tr>
+            <tr>
+                <td>Core Design Pillars</td>
+                <td>Slow and methodical gameplay, box as a versatile tool, clear indicators.</td>
+            </tr>
+            <tr>
+                <td>Unique Selling Points</td>
+                <td>Revive classic stealth experience, innovative interactions with the cardboard box.</td>
+            </tr>
+            <tr>
+                <td>Gameplay</td>
+                <td>Core gameplay loop, central mechanics, player control, obstacles and challenges.</td>
+            </tr>
+            <tr>
+                <td>Environment and Levels</td>
+                <td>Level 1 walkthrough, reception, server room, warehouse, office, hub world.</td>
+            </tr>
+            <tr>
+                <td>Bug Reports</td>
+                <td>Bugs found during testing.</td>
+            </tr>
+        </table>
+        
+        <h2>Bug Reports</h2>
+        <table class="bug-reports">
+            <tr>
+                <th>Bug Report ID</th>
+                <th>Description</th>
+                <th>Steps to Reproduce</th>
+                <th>Expected Result</th>
+                <th>Actual Result</th>
+                <th>Severity</th>
+                <th>Priority</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>CBG-001</td>
+                <td>Player character sometimes gets stuck in the cardboard box when attempting to use it for cover near walls or objects.</td>
+                <td>
+                    <ol>
+                        <li>Approach a wall or object with the cardboard box in hand.</li>
+                        <li>Attempt to crouch and move towards the wall or object to use the box for cover.</li>
+                    </ol>
+                </td>
+                <td>The player character should smoothly move behind or inside the cardboard box, using it for cover without any issues.</td>
+                <td>The player character sometimes gets stuck inside or behind the cardboard box, unable to move properly.</td>
+                <td>Medium</td>
+                <td>High</td>
+                <td>This issue seems to occur more frequently when the player character is moving quickly or when the box is placed close to walls or objects. Further investigation is needed to determine the exact cause and implement a fix.</td>
+            </tr>
+            <tr>
+                <td>CBG-002</td>
+                <td>Camera surveillance detects player even when the player is in the dark.</td>
+                <td>
+                    <ol>
+                        <li>Approach a camera surveillance area while in the dark.</li>
+                        <li>Observe the camera detecting the player.</li>
+                    </ol>
+                </td>
+                <td>The camera should only detect the player when they are in the light.</td>
+                <td>The camera detects the player even when they are in the dark.</td>
+                <td>Medium</td>
+                <td>Medium</td>
+                <td>This issue affects the game's stealth mechanics, as players rely on darkness for cover. Adjusting the camera's detection parameters could improve gameplay.</td>
+            </tr>
+            <tr>
+                <td>CBG-003</td>
+                <td>Circuit box does not activate back the laser alarm after some time of being deactivated by the player.</td>
+                <td>
+                    <ol>
+                        <li>Deactivate the laser alarm using the circuit box.</li>
+                        <li>Wait for some time.</li>
+                        <li>Observe if the laser alarm activates back on its own.</li>
+                    </ol>
+                </td>
+                <td>The laser alarm should remain deactivated until the player activates it again or the level restarts.</td>
+                <td>The laser alarm activates back on its own after some time, even if the player does not re-activate it.</td>
+                <td>Medium</td>
+                <td>High</td>
+                <td>This issue affects the game's stealth mechanics, as players rely on the circuit box to deactivate alarms strategically. It disrupts the player's ability to plan their movements and requires immediate attention.</td>
+            </tr>
+            <tr>
+                <td>CBG-004</td>
+                <td>Light system gauge bar that shows if the player is in the dark or light seems to not work.</td>
+                <td>
+                    <ol>
+                        <li>Move the player character between light and dark areas.</li>
+                        <li>Observe the light system gauge bar.</li>
+                    </ol>
+                </td>
+                <td>The light system gauge bar should accurately reflect whether the player is in the dark or light.</td>
+                <td>The light system gauge bar does not change or inaccurately reflects the player's environment.</td>
+                <td>Low</td>
+                <td>Medium</td>
+                <td>This issue affects the player's ability to understand their visibility to enemies. It can lead to confusion and frustration, especially during stealth segments. It should be addressed to ensure proper gameplay feedback.</td>
+            </tr>
+            
+            <!-- Add more bug reports as needed -->
+        </table>
+    </div>
+</body>
+</html>

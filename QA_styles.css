@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.game-info th, .bug-reports th {
+    background-color: #ddd;
+}
+
+.game-info td:nth-child(odd), .bug-reports td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.game-info td, .bug-reports td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
